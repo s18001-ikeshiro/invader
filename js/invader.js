@@ -34,6 +34,7 @@ phina.define('MainScene', {
 
         // 複数の敵を登録する対象
         this.enemyGroup = EnemyGroup().addChildTo(this);
+        const enemy1 = Enemy(this.gridX.span(5), this.gridY.span(3), ENEMY_ASSETS[0]).addChildTo(this.enemyGroup);
 
         // 敵が発射したミサイルを登録する対象
         this.missileGroup = DisplayElement().addChildTo(this);
